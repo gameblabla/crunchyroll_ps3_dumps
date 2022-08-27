@@ -1,0 +1,11 @@
+--- a/js/app/CrunchyRoll/model/api/ApiRequestSpec.js
++++ b/js/app/CrunchyRoll/model/api/ApiRequestSpec.js
+@@ -17,7 +17,7 @@
+     var retryOnBadSession = true;
+ 
+     that.url = function() {
+-      var url = 'http' + (httponly === undefined ? 's' : '') + '://' + trilithium.config.api.hostname + '/' + method + '.' + version + '.json';
++      var url = 'http' + '://' + trilithium.config.api.hostname + '/' + method + '.' + version + '.json';
+       return url;
+     };
+ 
